@@ -51,7 +51,7 @@ int main() {
   }
 
   if (!(product_type == "watermelon" || product_type == "apple" || product_type == "banana")) {
-    cout << "Invalid product type entered! Product must be 'watermelon', 'apple', or 'banana'." << endl;
+    cout << "Invalid product type entered! Product must be 'watermelon', 'apple', or 'banana'." << endl; // Added in case of spelling mistakes.
     return 1; //
   }
 
@@ -103,9 +103,6 @@ int main() {
     discount_price = total_cost * .10;
     total_cost = total_cost - discount_price;
   }
-
-      
-  // DO NOT EDIT BELOW THIS LINE!
 
   // TELL USER THEIR FINAL TOTAL COST, AND COST PER FRUIT ITEM
   cout << "Your total cost will be : $" << total_cost << endl;
